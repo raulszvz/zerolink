@@ -1,0 +1,15 @@
+name: "zerolink"
+type: "sw.application"
+description: "Nodo mesh with camera"
+assets:
+data:
+  applicationConfigVariables:
+    - BALENA_HOST_CONFIG_start_x: 1
+    - BALENA_HOST_CONFIG_gpu_mem_256: 192
+    - BALENA_HOST_CONFIG_gpu_mem_512: 256
+    - BALENA_HOST_CONFIG_gpu_mem_1024: 448
+    - AP_SSID: "WiFi Repeater"
+    - AP_PASSWORD: "charlietheunicorn"
+  defaultDeviceType: "raspberry-pi"
+  supportedDeviceTypes:
+    - "raspberry-pi"

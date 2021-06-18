@@ -1,0 +1,19 @@
+version: '2.1'
+services:
+        zerocam:
+                build: ./zerocam
+                privileged: true
+                restart: always
+                network_mode: "host"
+                labels:
+                        io.balena.features.kernel-modules: '1'
+        zerowifi:
+                build: ./wifi-repeater
+                privileged: true
+                labels:
+                        io.balena.features.dbus: '1'
+        zeroapi:
+                build: ./zeroapi
+                privileged: true
+                restart: always
+                network_mode: "host"                

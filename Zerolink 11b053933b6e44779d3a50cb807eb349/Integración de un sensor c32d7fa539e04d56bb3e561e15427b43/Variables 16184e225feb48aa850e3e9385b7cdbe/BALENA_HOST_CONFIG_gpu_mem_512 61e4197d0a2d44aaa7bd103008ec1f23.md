@@ -1,0 +1,3 @@
+# BALENA_HOST_CONFIG_gpu_mem_512
+
+Valor: 256

@@ -1,0 +1,3 @@
+# BALENA_HOST_CONFIG_gpu_mem_1024
+
+Valor: 448
